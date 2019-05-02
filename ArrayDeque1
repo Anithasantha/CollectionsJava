@@ -1,0 +1,29 @@
+package test;
+
+
+import java.util.*;
+
+
+public class ArrayDeque1  {
+
+	public static void main(String[] args) {
+		ArrayDeque<String> q=new ArrayDeque<String>();
+		q.add("A");
+		q.add("B");
+		q.add("C");
+		q.add("D");
+		q.add("E");
+		q.add("E");
+		System.out.println(q);
+		q.addFirst("Alphabets");	//add first in queue
+		q.addLast("F");           //add last in queue
+		System.out.println(q);
+		q.pollFirst();			//remove first element
+		q.pollLast();			//remove last element
+		System.out.println(q);
+		q.clear();				//clear the elements
+		System.out.println(q);
+
+	}
+
+}
